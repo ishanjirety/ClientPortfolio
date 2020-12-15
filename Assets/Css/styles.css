@@ -62,13 +62,33 @@ header {
 ul{
   padding: 20px;
 }
+.alternate{
+  padding:1rem;
+  width: 100%;
+	position: relative;
+	top: 450px;
+  background:transparent;
+  background-image: url(/Assets/Images/pexels-simon-migaj-747964.jpg);
+  -webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+  height: auto;
+  padding: 4rem;
+  border-bottom: 1px solid #C7D1D3;
+  color: white;
+  text-align: center;
+  text-align: center;
+}
+.bottom-space{
+  margin: 3px}
+
 .banner-area {
 	width: 100%;
 	height: 500px;
   position: fixed;
   text-align: center;
 	/* top: 100px; */
-   background-image: url(/Assets/Images/v2osk-1Z2niiBPg5A-unsplash.jpg);
+   background-image: url(/Assets/Images/pexels-simon-migaj-747964.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
@@ -80,9 +100,29 @@ ul{
 	text-transform: uppercase;
 	color: #fff;
 }
-.underline{
+.banner-area p {
+	padding-top: 8%;
+	font-size: 70px;
+	font-family: poppins;
+	text-transform: uppercase;
+	color: #fff;
+}
+/* .underline{
   display: inline-block;
-border-bottom: 2px solid #3DD5F3;
+  border-top: 2px solid #3DD5F3;
+  border-bottom: 2px solid #3DD5F3;
+  padding: 10px;
+} */
+.card{
+  display: inline;
+  color: black;
+width: 40vw;
+padding: 1rem;
+box-shadow: 0px 0px 20px 5px black;
+text-align: left;
+}
+.special-list{
+  font-size:1.2rem ;
 }
 .content-area {
 	width: 100%;
@@ -90,8 +130,13 @@ border-bottom: 2px solid #3DD5F3;
 	top: 450px;
 	background: #ebebeb;
   height: auto;
-  padding: 1rem;
+  padding: 5rem;
   border-bottom: 1px solid #C7D1D3;
+  text-align: center;
+}
+.inline{
+  display: inline;
+  text-decoration: none;
 }
 .content-area h2 {
 	font-family: poppins;
@@ -124,10 +169,12 @@ border-bottom: 2px solid #3DD5F3;
 }
 .list-non-bullet{
   list-style:none;
+  
 }
 .list-items-inline{
   display: inline;
   padding: 2rem 0.5rem;
+  
 }
 .navigation .link{
   color: white;
@@ -167,13 +214,11 @@ border-bottom: 2px solid #3DD5F3;
   vertical-align: top;
 }
 .footer{
-  background-color: #3DD5F3;
+  background-color: #ADB5BD;
   padding: 2rem 1rem;
   text-align: center;
   color: white;
   margin-top:1rem;
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
 }
 .footer .link{
   color: white;
