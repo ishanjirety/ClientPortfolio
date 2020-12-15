@@ -1,0 +1,277 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+@import "https://fonts.googleapis.com/css?family=Lato";
+/** Header and other non-related styling **/
+* {
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100%;
+}
+:root{
+  --primary-color:#6EA8FE;
+}
+body {
+  margin: 0;
+  /* background: linear-gradient(var(--primary-color) -50%, #b65e00 150%); */
+  font-family: "Montserrat", sans-serif;
+}
+ul{
+ margin-top: -30px; 
+}
+main {
+  display: flex;
+  flex-flow: column;
+  margin:  auto;
+  width: auto;
+  max-width: 100%;
+}
+.wrapper {
+	width: 100%;
+  margin: 0 auto;
+}
+header {
+	height: 100px;
+	background: var(--primary-color);
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+}
+.logo {
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+.logo a {
+	text-decoration: none;
+	font-size: 30px;
+	font-family: poppins;
+	color: #fff;
+	letter-spacing: 5px;
+}
+.banner-area {
+	width: 100%;
+	height: 500px;
+  position: fixed;
+  text-align: center;
+	top: 100px;
+	background-image: url(/Assets/Images/v2osk-1Z2niiBPg5A-unsplash.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.banner-area h2 {
+	padding-top: 8%;
+	font-size: 70px;
+	font-family: poppins;
+	text-transform: uppercase;
+	color: #fff;
+}
+.underline{
+  display: inline-block;
+border-bottom: 2px solid #3DD5F3;
+}
+.content-area {
+	width: 100%;
+	position: relative;
+	top: 450px;
+	background: #ebebeb;
+  height: auto;
+  padding: 1rem;
+  border-bottom: 1px solid #C7D1D3;
+}
+.content-area h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+  font-size: 40px;
+  text-align: center;
+  /* text-decoration: underline; */
+	margin: 0;
+}
+.content-area p {
+	padding: 2% 0px;
+	font-family: poppins;
+	line-height: 30px;
+}
+
+.navigation{
+  position: fixed;
+  background-color:#3DD5F3;
+  width: 100vw;
+  color:white;
+  padding:1rem;
+  /* display:sticky; */
+  
+}
+.list{
+  margin-bottom: 1rem;
+}
+.list-non-bullet{
+  list-style:none;
+}
+.list-items-inline{
+  display: inline;
+  padding: 2rem 0.5rem;
+}
+.navigation .link{
+  color: white;
+  text-decoration: none;
+	font-size: 25px;
+	font-family: poppins;
+	color: #fff;
+	letter-spacing: 1px;
+}
+.navigation .nav-pills{
+  text-align: right;
+  padding-bottom:20px;
+  margin-right: 20px !important;
+  margin-bottom:-5px;
+  margin-top:-5px !important;
+  display: block;
+    }
+.navigation .nav-brand{
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center; 
+  padding:10px;
+  margin:0px;
+  display: inline-block;
+  vertical-align: top;
+}
+.navigation .link-active{
+  font-weight: bold;
+}
+.navigation .nav-logo{
+  max-width: 50px; 
+  border-radius: 50rem;
+  text-align: center; 
+  padding:0px;
+  margin:0px;
+  display: inline-block;
+  vertical-align: top;
+}
+.footer{
+  background-color: #3DD5F3;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+  margin-top:1rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.footer .link{
+  color: white;
+  padding: 1px;
+}
+.footer ul{
+  padding-inline-start: 0px;
+  /*UserAgent Style Padding
+  Was Applide To Over Right Have to Apply 
+  This Property GOT by Inspect Element*/
+}
+
+/** Hover-related CSS **/
+#nav {
+  display: flex;
+  flex-flow: column;
+  max-width: 100%;
+  width: 960px;
+  background-color: white;
+  opacity: 0.95;
+  padding: 15px 30px;
+  margin: 0 auto 30px;
+}
+#nav h1 {
+  font-size: 48px;
+  text-align: center;
+  margin: 30px 15px 60px;
+}
+#nav .nav-links {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0 0 45px;
+}
+#nav .nav-links .hover {
+  font-size: 36px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+#nav .nav-links .hover:before, #nav .nav-links .hover:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 0px;
+  height: 5px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.75s;
+  opacity: 0;
+  background-color: #e69500;
+}
+#nav .nav-links .hover.hover-1:before, #nav .nav-links .hover.hover-1:after {
+  left: 0;
+}
+#nav .nav-links .hover.hover-2:before, #nav .nav-links .hover.hover-2:after {
+  right: 0;
+}
+#nav .nav-links .hover.hover-3:before {
+  left: 50%;
+}
+#nav .nav-links .hover.hover-3:after {
+  right: 50%;
+}
+#nav .nav-links .hover.hover-4:before {
+  left: 0;
+}
+#nav .nav-links .hover.hover-4:after {
+  right: 0;
+}
+#nav .nav-links:hover {
+  cursor: pointer;
+}
+#nav .nav-links:hover .hover:before, #nav .nav-links:hover .hover:after {
+  width: 100%;
+  opacity: 1;
+}
+#nav .nav-links:hover .hover.hover-3:before, #nav .nav-links:hover .hover.hover-3:after, #nav .nav-links:hover .hover.hover-4:before, #nav .nav-links:hover .hover.hover-4:after {
+  width: 50%;
+}
+@media screen and (max-width: 500px) {
+  .nav a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align:right; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+/* -----------------------  */
+a.middle
+{
+    position: relative;
+}
+
+a.middle:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+a.middle:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
