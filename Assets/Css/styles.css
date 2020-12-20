@@ -3,6 +3,7 @@
 /** Header and other non-related styling **/
 * {
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 html{
@@ -17,7 +18,7 @@ body {
 body {
   margin: 0;
   /* background: linear-gradient(var(--primary-color) -50%, #b65e00 150%); */
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
 }
 ul{
  margin-top: -30px; 
@@ -34,6 +35,9 @@ main {
   margin: 0 auto;
   margin-bottom: 20px;
   text-align: left;
+}
+.wrapper .middle-one{
+  margin-left:39%;
 }
 header {
 	height: 100px;
@@ -80,11 +84,13 @@ ul{
   padding: 4rem;
   border-bottom: 1px solid #C7D1D3;
   color: white;
-  text-align: center;
+ 
 }
 .alternate h2{
   margin: 1rem;
+  text-align: center;
 }
+
 .card{
   color:black;
   text-align: left;
@@ -372,4 +378,14 @@ span.middle-one:before {
 span.middle-one:hover:before {
   visibility: visible;
   transform: scaleX(1);
+}
+.card-body:hover{
+ box-shadow: 0px 0px 30px 1px black; 
+}
+
+.wrapper div.collapse[aria-expanded="false"] {
+  overflow: hidden;
+}
+#ShowMore{
+  margin-left:47% ;
 }

@@ -10,6 +10,8 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="/Assets/JS/functions.js" typs="text/javascript" async></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'></script>
+
 </head>
 <body>
     <main> 
@@ -58,9 +60,9 @@
         </div>
        
         <div class="alternate" id="Certificates">
-          <div class="wrapper">
+          <div class="wrapper " >
             <h2><span class="underline">━ CERTIFICATIONS ━</span></h2>
-            <div class="row">
+            <div class="row collapse" id="collapseExample" aria-expanded="false">
               <div class="col-sm-6">
                 <div class="card">
                   <div class="card-body">
@@ -88,19 +90,23 @@
        
        
           </div>
+          <a role="button" class="collapsed" data-toggle="collapse" id="ShowMore" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Read<i class="fa fa-angle-down" aria-hidden="true"></i>
+          </a>
         </div> 
+        
         <div class="content-area">
           <div class="wrapper">
             <h2><span class="underline">━ SUCCESS STORY ━</span></h2>
             <div class="line">
+             
             <article>Practicing for the past two decades and more, have served thousands of clients in India and Canada. I received the Fulbright Award for Counseling in 2013. I provide services in Hindi, Punjabi, Urdu besides English. <br></article>
-          </div>
-          </div>
+        </div>
           <strong class="special-list" style="padding-left:0px"><span class="middle-one" style="color: black;">Years Of Experience : 27</span></strong>
+          </div>  
         </div>
         <div class="alternate" id="Specialization">
           <div class="wrapper">
-            <h2><span class="underline">━ SPECIALIZATION ━</span></h2>
+            <h2><span class="underline">━ THERAPY ━</span></h2>
 
             <div class="row">
               <div class="col-sm-6">
@@ -110,7 +116,6 @@
                     <ul class="list-non-bullet">
                       <li> ━ Cognitive Behavioural</li>
                       <li> ━ Humanistic-Experiential</li>
-                      <span id="dots">...</span><span id="more">
                       <li> ━ Mindfulness based</li>
                       <li> ━ Supportive</li>
                       <li> ━ Brief psychotherapy</li>
