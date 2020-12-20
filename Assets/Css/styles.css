@@ -126,12 +126,12 @@ ul{
 	text-transform: uppercase;
 	color: #fff;
 }
-/* .underline{
+.underline{
   display: inline-block;
-  border-top: 2px solid #3DD5F3;
-  border-bottom: 2px solid #3DD5F3;
+  letter-spacing:4px;
+  font-size:2rem;
   padding: 10px;
-} */
+} 
 .special-list{
   font-size:1.2rem ;
   padding-bottom: 1rem;
@@ -254,8 +254,8 @@ ul{
 }
 
 .link{
-  text-decoration: none;
-  text-underline-offset: none;
+  text-decoration: none !important;
+  color:white !important;
 }
 /** Hover-related CSS **/
 #nav {
@@ -337,8 +337,11 @@ ul{
 }
 
 /* -----------------------  */
+.middle{
+  color:white
+}
 a.middle
-{
+{   
     position: relative;
 }
 
@@ -379,8 +382,12 @@ span.middle-one:hover:before {
   visibility: visible;
   transform: scaleX(1);
 }
-.card-body:hover{
- box-shadow: 0px 0px 30px 1px black; 
+.col-sm-6:hover{
+ /* box-shadow: 0px 0px 30px 1px black;  */
+ transform: scale(1.03);
+}
+.col-sm-6{
+  transition: transform .2s;
 }
 
 .wrapper div.collapse[aria-expanded="false"] {
