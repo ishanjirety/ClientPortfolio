@@ -444,7 +444,7 @@ span.middle-one:hover:before {
 .highlight:hover {
   -webkit-animation: pulse 1s ease-out 0.4s;
           animation: pulse 1s ease-out 0.4s;
-  color: #0395E5;
+  color: transparent;
 }
 .highlight:hover:before, .highlight:hover:after {
   width: 100%;
