@@ -25,3 +25,4 @@ const stop = ev => {
 // Events
 document.querySelectorAll('.highlight').forEach( el => el.addEventListener( 'mousedown', start ));
 document.addEventListener( 'mouseup', stop );
+

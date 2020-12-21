@@ -459,3 +459,34 @@ span.middle-one:hover:before {
   -webkit-transition: width 0.1s ease 0.2s, height 0.1s ease 0.3s, visibility 0s 0.2s;
   transition: width 0.1s ease 0.2s, height 0.1s ease 0.3s, visibility 0s 0.2s;
 }
+
+footer{
+  padding: 1rem;
+}
+.form-floating{
+  display:block;
+  margin: auto;
+  max-width: 50%;
+}
+.btn{
+width: 100px;
+background-color: transparent !important;
+color:black !important;
+border: 1px solid black !important;
+}
+/* 
+<footer>
+      <h2>Contact Us</h2>
+      <br>
+      <div class="form-floating">
+        <label for="floatingInput" class="floatingInput">Email address</label>
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        
+      </div>
+      <div class="form-floating">
+        <label for="floatingPassword" class="floatingInput">Password</label>
+        <textarea type="text" class="form-control textarea" id="floatingPassword" placeholder="Password"></textarea>
+        
+      </div>
+    </footer>
+     */
