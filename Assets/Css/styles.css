@@ -537,9 +537,19 @@ footer{
 .btn{
 width: 100px;
 background-color: transparent !important;
-color:black !important;
-border: 1px solid black !important;
+color:#064E3B !important;
+border: 1px solid #064E3B !important;
 }
+.btn:hover{
+  width: 100px;
+  background-color: #064E3B !important;
+  color:white !important;
+  border: 1px solid #064E3B !important;
+  }
+
+  /* .gform{
+     max-height: ;
+  } */
 /* 
 <footer>
       <h2>Contact Us</h2>
