@@ -11,6 +11,8 @@ html{
 }
 body {
   min-height: 100%;
+}
+body .underline{
   color:#064E3B !important;
 }
 :root{
@@ -76,7 +78,46 @@ ul{
   width: 100%;
 	position: relative;
 	top: 450px;
+  background:white;
+  /* background-image: url(/Assets/Images/pexels-simon-migaj-747964.jpg); */
+  -webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+  height: auto;
+  padding: 4rem;
+  border-bottom: 1px solid #C7D1D3;
+  color: white;
+}
+.read-more{
+  margin-left:50% ;
+}
+.img{
+  text-align: center;
+}
+.img-center{
+  padding-top:10px !important;
+}
+.alternate-img-wrapper{
+  width: 100%;
+	position: relative;
+  top: 450px;
   background:transparent;
+  /* background-image: url(/Assets/Images/pexels-simon-migaj-747964.jpg); */
+  -webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+  height: auto;
+  padding: 4rem;
+  border-bottom: 1px solid #C7D1D3;
+  color:transparent;
+  object-fit: fill;
+  height: 30vh !important;
+}
+.cover-img{
+  width: 100%;
+	position: relative;
+	top: 450px;
+  /* background:white; */
   background-image: url(/Assets/Images/pexels-simon-migaj-747964.jpg);
   -webkit-background-size: cover;
 	background-size: cover;
@@ -85,8 +126,8 @@ ul{
   padding: 4rem;
   border-bottom: 1px solid #C7D1D3;
   color: white;
- 
 }
+
 .alternate h2{
   margin: 1rem;
   text-align: center;
@@ -238,10 +279,11 @@ ul{
   vertical-align: top;
 }
 .footer{
-  background-color: #ADB5BD;
+  background-color: #064E3B;
   padding: 2rem 1rem;
   text-align: center;
   color: white;
+  max-height: 600px !important;
 }
 .footer .link{
   color: white;
@@ -383,10 +425,29 @@ span.middle-one:hover:before {
   visibility: visible;
   transform: scaleX(1);
 }
+.card-body:hover{
+  background-color: #064E3B;
+  color: white;
+}
+
 .col-sm-6:hover{
  /* box-shadow: 0px 0px 30px 1px black;  */
  transform: scale(1.03);
 }
+.slide{
+ display: block;
+ margin: auto;
+}
+.carousel{
+  max-width:600px !important ;
+}
+.alternate-img-wrapper{
+}
+#Certificates{
+  text-align: center;
+  height: 90vh;
+}
+
 .col-sm-6{
   transition: transform .2s;
 }
@@ -460,6 +521,10 @@ span.middle-one:hover:before {
   -webkit-transition: width 0.1s ease 0.2s, height 0.1s ease 0.3s, visibility 0s 0.2s;
   transition: width 0.1s ease 0.2s, height 0.1s ease 0.3s, visibility 0s 0.2s;
 }
+/* ****************************************** */
+
+/* ****************************************** */
+
 
 footer{
   padding: 1rem;

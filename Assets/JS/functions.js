@@ -26,3 +26,7 @@ const stop = ev => {
 document.querySelectorAll('.highlight').forEach( el => el.addEventListener( 'mousedown', start ));
 document.addEventListener( 'mouseup', stop );
 
+
+$('.carousel').carousel({
+	interval: 2000
+  })
