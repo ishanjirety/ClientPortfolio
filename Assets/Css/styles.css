@@ -11,6 +11,7 @@ html{
 }
 body {
   min-height: 100%;
+  color:#064E3B !important;
 }
 :root{
   --primary-color:#6EA8FE;
